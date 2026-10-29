@@ -1,0 +1,8 @@
+{
+  "name": "OS Memory & I/O Simulator",
+  "description": "Interactive simulators for Memory APIs, Address Translation, Paging, Swapping, and I/O Devices.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

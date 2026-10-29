@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>OSTEP Interactive Simulator · Operating Systems Laboratory</title>
+    <meta name="title" content="OSTEP Interactive Simulator · Operating Systems Laboratory" />
+    <meta
+      name="description"
+      content="Comprehensive interactive operating systems laboratory simulating CPU Scheduling, Memory Virtualization, Concurrency, and Persistence based on OSTEP."
+    />
+    <meta
+      name="keywords"
+      content="operating systems simulator, ostep, three easy pieces, cpu scheduling, mlfq, round robin, stcf, virtual memory, paging, tlb, address translation, base and bounds, segmentation, memory allocation, first fit, best fit, swapping, lru, clock algorithm, concurrency, mutex locks, semaphores, bounded buffer, deadlock coffman, io devices, dma, disk scheduling, sstf, scan elevator, raid parity, inodes, vsfs"
+    />
+    <meta name="author" content="Faysal Alibrahim" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#090D16" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="OSTEP Interactive Simulator" />
+    <meta property="og:title" content="OSTEP Interactive Simulator · Operating Systems Laboratory" />
+    <meta
+      property="og:description"
+      content="Interactive simulations for CPU Scheduling, Process API, Memory Virtualization, TLB Paging, Concurrency, and Persistence."
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="OSTEP Interactive Simulator · Operating Systems Laboratory" />
+    <meta
+      name="twitter:description"
+      content="Interactive simulations for CPU Scheduling, Process API, Memory Virtualization, TLB Paging, Concurrency, and Persistence."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- Schema.org Structured Data for Search Engine Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "OSTEP Interactive Simulator",
+      "alternateName": "Operating Systems Three Easy Pieces Simulator",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "All",
+      "author": {
+        "@type": "Person",
+        "name": "Faysal Alibrahim",
+        "url": "https://github.com/FAYSAL-Q8"
+      },
+      "description": "Comprehensive interactive operating systems laboratory simulating CPU Scheduling, Memory Virtualization, Concurrency, and Persistence based on OSTEP.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "CPU Scheduling (FIFO, SJF, STCF, Round Robin, MLFQ)",
+        "Process API (fork, exec, wait, exit, PCB, and Zombie states)",
+        "Memory API (malloc, free, memory leaks, dangling pointers, use-after-free)",
+        "Free-Space Management (First Fit, Best Fit, Worst Fit, Next Fit, Splitting, Coalescing)",
+        "Address Translation (Base & Bounds, Segmentation)",
+        "Paging and Hardware TLB Cache Walk",
+        "Swapping Policies (FIFO, LRU, Clock, Optimal, AMAT)",
+        "Concurrency & Synchronization (Bounded Buffer, Mutex, Semaphores)",
+        "Deadlock Detection & Prevention (Coffman's 4 Conditions, RAG)",
+        "I/O Devices & DMA (Polling vs Interrupts vs DMA)",
+        "Hard Disk Arm Scheduling (FCFS, SSTF, SCAN, C-SCAN, LOOK)",
+        "RAID Storage & Bitwise XOR Parity Reconstruction",
+        "File System Inodes & Directory Path Resolution"
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-[#090D16] text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
+
+
