@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Interactive Operating Systems Laboratory simulating all core concepts from OSTEP (CPU Scheduling, Memory Virtualization, Concurrency, and Persistence).",
   "author": "Faysal Alibrahim <https://github.com/FAYSAL-Q8>",
-  "homepage": "https://github.com/FAYSAL-Q8/ostep-simulator",
+  "homepage": "https://os-simu.vercel.app/",
   "repository": {
     "type": "git",
     "url": "https://github.com/FAYSAL-Q8/ostep-simulator.git"

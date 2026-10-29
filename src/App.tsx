@@ -43,15 +43,25 @@ export default function App() {
           </button>
           <div className="flex items-center gap-2">
             <ActiveIcon className="w-4 h-4 text-indigo-400" />
-            <span className="font-bold text-sm text-white truncate max-w-[190px]">
+            <span className="font-bold text-sm text-white truncate max-w-[170px]">
               {activeTabMeta.label}
             </span>
           </div>
         </div>
 
-        <span className="text-[10px] font-mono font-medium text-slate-400 bg-[#121826] px-2 py-1 rounded border border-[#1F293D]">
-          {activeTabMeta.chapter}
-        </span>
+        <div className="flex items-center gap-2">
+          <a
+            href="https://github.com/FAYSAL-Q8"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="text-[11px] text-slate-400 hover:text-white"
+          >
+            by <strong className="text-indigo-400 font-bold">FA</strong>
+          </a>
+          <span className="text-[10px] font-mono font-medium text-slate-400 bg-[#121826] px-2 py-1 rounded border border-[#1F293D]">
+            {activeTabMeta.chapter}
+          </span>
+        </div>
       </header>
 
       {/* Mobile Slide-Out Drawer Overlay */}
@@ -66,9 +76,14 @@ export default function App() {
           {/* Drawer Content */}
           <div className="relative w-4/5 max-w-xs h-full bg-[#0C101C] border-r border-[#1F293D] shadow-2xl flex flex-col z-10 animate-in slide-in-from-left duration-200">
             <div className="p-4 border-b border-[#1F293D] flex items-center justify-between">
-              <span className="text-xs font-bold uppercase tracking-wider text-slate-400">
-                OSTEP Simulation Library
-              </span>
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-slate-300 block">
+                  OSTEP Laboratory
+                </span>
+                <span className="text-[10px] text-slate-500">
+                  Developed by <strong className="text-indigo-400 font-semibold">FA</strong>
+                </span>
+              </div>
               <button
                 onClick={() => setMobileMenuOpen(false)}
                 className="p-2 -mr-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 min-h-[44px] min-w-[44px] flex items-center justify-center"
@@ -95,8 +110,33 @@ export default function App() {
       </aside>
 
       {/* Main Content Area */}
-      <main className="flex-1 min-h-0 lg:h-screen lg:overflow-y-auto p-4 sm:p-6 lg:p-8 xl:p-10">
-        <div className="mx-auto w-full max-w-[1400px] h-full flex flex-col">
+      <main className="flex-1 min-h-0 lg:h-screen lg:overflow-y-auto p-4 sm:p-6 lg:p-8 xl:p-10 flex flex-col">
+        {/* Top Global Sub-Bar */}
+        <div className="mx-auto w-full max-w-[1400px] flex items-center justify-between pb-4 mb-4 border-b border-[#1F293D]/60 text-xs text-slate-400 shrink-0">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="text-slate-300 font-medium">OSTEP Systems Laboratory</span>
+            <span aria-hidden="true">·</span>
+            <span className="text-slate-500 font-mono">Three Easy Pieces</span>
+          </div>
+
+          <div className="flex items-center gap-2.5">
+            <span className="text-slate-400">
+              Developed by <strong className="text-indigo-400 font-bold">FA</strong>
+            </span>
+            <span aria-hidden="true" className="text-slate-600">·</span>
+            <a
+              href="https://github.com/FAYSAL-Q8"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="text-xs text-indigo-400 hover:text-indigo-300 font-mono transition-colors font-medium hover:underline"
+            >
+              github.com/FAYSAL-Q8
+            </a>
+          </div>
+        </div>
+
+        <div className="mx-auto w-full max-w-[1400px] flex-1 flex flex-col">
           {activeTab === "cpu-scheduling" && <CPUScheduling />}
           {activeTab === "process-api" && <ProcessAPI />}
           {activeTab === "memory-api" && <MemoryAPI />}
@@ -110,6 +150,25 @@ export default function App() {
           {activeTab === "raid" && <RAIDStorage />}
           {activeTab === "file-system" && <FileSystemInodes />}
         </div>
+
+        {/* Global Footer */}
+        <footer className="mx-auto w-full max-w-[1400px] mt-8 pt-6 pb-2 border-t border-[#1F293D]/60 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500 shrink-0">
+          <div>OSTEP Interactive Simulator · Operating Systems Laboratory</div>
+          <div className="flex items-center gap-2">
+            <span>
+              Developed by <strong className="text-slate-300 font-semibold">FA</strong> (Faysal Alibrahim)
+            </span>
+            <span aria-hidden="true">·</span>
+            <a
+              href="https://github.com/FAYSAL-Q8"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="text-indigo-400 hover:text-indigo-300 font-medium transition-colors"
+            >
+              https://github.com/FAYSAL-Q8
+            </a>
+          </div>
+        </footer>
       </main>
     </div>
   );

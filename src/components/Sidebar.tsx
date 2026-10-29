@@ -67,7 +67,9 @@ export function Sidebar({ activeTab, setActiveTab, onItemClick }: SidebarProps) 
           </div>
           <div>
             <h1 className="text-sm font-bold text-white tracking-tight">OSTEP Laboratory</h1>
-            <p className="text-[11px] text-slate-400">Three Easy Pieces Simulator</p>
+            <p className="text-[11px] text-slate-400">
+              Developed by <a href="https://github.com/FAYSAL-Q8" target="_blank" rel="noreferrer noopener" className="text-indigo-400 hover:text-indigo-300 font-semibold">FA</a>
+            </p>
           </div>
         </div>
       </div>
@@ -124,9 +126,24 @@ export function Sidebar({ activeTab, setActiveTab, onItemClick }: SidebarProps) 
       </div>
 
       {/* Footer Info */}
-      <div className="p-4 border-t border-[#1F293D] flex items-center justify-between text-[11px] text-slate-500 shrink-0">
-        <span>12 Core Modules</span>
-        <span>OSTEP Complete</span>
+      <div className="p-4 border-t border-[#1F293D] flex flex-col gap-2 shrink-0 bg-[#080C14]">
+        <div className="flex items-center justify-between text-[11px] text-slate-500">
+          <span>12 Core Modules</span>
+          <span>OSTEP Complete</span>
+        </div>
+        <div className="pt-2 border-t border-[#1F293D]/60 flex items-center justify-between">
+          <span className="text-xs text-slate-300">
+            Developed by <strong className="text-indigo-400 font-bold">FA</strong>
+          </span>
+          <a
+            href="https://github.com/FAYSAL-Q8"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="text-xs text-slate-400 hover:text-white transition-colors font-mono"
+          >
+            @FAYSAL-Q8
+          </a>
+        </div>
       </div>
     </div>
   );

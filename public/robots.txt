@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ostep-simulator.vercel.app/sitemap.xml
+Sitemap: https://os-simu.vercel.app/sitemap.xml

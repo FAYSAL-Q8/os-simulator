@@ -1,6 +1,12 @@
 # OSTEP Interactive Simulator
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-os--simu.vercel.app-6366f1?style=for-the-badge&logo=vercel)](https://os-simu.vercel.app/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-10b981?style=for-the-badge)](LICENSE)
+[![GitHub](https://img.shields.io/badge/Author-Faysal%20Alibrahim-181717?style=for-the-badge&logo=github)](https://github.com/FAYSAL-Q8)
+
 > An interactive, cycle-accurate operating systems laboratory simulating the core mechanisms and policies of virtualization, concurrency, and persistence. Built for computer science students and systems engineers, this platform transforms abstract algorithmic concepts from *Operating Systems: Three Easy Pieces (OSTEP)* into tactile, visual, and measurable experiments.
+
+🌐 **Live Production Deployment**: [https://os-simu.vercel.app/](https://os-simu.vercel.app/)
 
 ---
 
@@ -28,6 +34,7 @@
 
 ## Tech Stack & Architecture
 
+- **Live Application**: [https://os-simu.vercel.app/](https://os-simu.vercel.app/)
 - **Frontend Framework**: React 19 + TypeScript (Strict Mode)
 - **Build Tool**: Vite 6
 - **Styling**: Tailwind CSS v4 with custom Obsidian & Indigo systems theme
